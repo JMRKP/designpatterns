@@ -1,12 +1,16 @@
-#State
+# State
 #### Behavioral Pattern
 
 ## Beschreibung
-Ein Objekt (Context) hat verschiedene Zustände. In Abhängigkeit von seinem Zustand (State) ändert sich das Verhalten. Das Verhalten wird im Interface Zustand (State) definiert und in konkreten Zustandsklassen (Concrete State) definiert. Die Zustandsübergänge können entweder vom Context oder von Konkreten Zuständen definiert werden. Möglicherweise ist es sinnvoll, die konkreten Zustände nicht jedesmal neu zu initialisieren. Wenn eine Zusatndsmethode keinen Rückgabewert braucht, kann sie direkt den Folgezustand zurückgeben.
+Ein Objekt (Context) hat verschiedene Zustände. In Abhängigkeit von seinem Zustand (State) ändert sich sein Verhalten. Das Verhalten wird im Interface Zustand (State) definiert und in konkreten Zustandsklassen (Concrete State) implemenitert. 
+
+Die Zustandsübergänge können entweder vom Context oder von konkreten Zuständen definiert werden. Möglicherweise ist es sinnvoll, die konkreten Zustände nicht jedesmal neu zu initialisieren. Wenn eine Zustandsmethode keinen Rückgabewert braucht, kann sie direkt den Folgezustand zurückgeben.
+
 ## Beispiel
+Accelerations
 
 ## Classes 
-Accelerations
+
 
 ```java
 public class Move implements Accelerated {
